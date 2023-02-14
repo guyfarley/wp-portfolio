@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AAAA,MACE,oBAAqB","sources":["webpack://empty-project/./src/scss/components/_hero.scss"],"sourcesContent":[".hero {\n  background-color: red;\n}"],"names":[],"sourceRoot":""}
