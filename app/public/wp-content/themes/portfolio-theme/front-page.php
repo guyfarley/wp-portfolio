@@ -5,7 +5,7 @@
 
 <!-- Header -->
 <header id="header" class="alt">
-  <a href="index.html" class="logo">Home</a>
+  <a href="<?= home_url(); ?>" class="logo">Home</a>
   <nav>
     <a href="#menu">Menu</a>
   </nav>
@@ -15,7 +15,7 @@
 <nav id="menu">
   <ul class="links">
     <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
+    <li><a href="<?= site_url('/projects.php'); ?>">Projects</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
@@ -60,7 +60,7 @@
         <img src="<?= get_template_directory_uri() ?>/images/pic02.jpg" alt="" />
       </span>
       <header class="major">
-        <h3><a href="projects.html" class="link">Projects</a></h3>
+        <h3><a href="<?php echo site_url('/projects'); ?>" class="link">Projects</a></h3>
         <p>Party In The Back</p>
       </header>
     </article>
