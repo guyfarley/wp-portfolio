@@ -10,31 +10,39 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<!-- Header -->
+		<header id="header">
+		<a href="<?= home_url(); ?>" class="logo">Home</a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
 
-			get_template_part( 'template-parts/content', get_post_type() );
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<!-- <ul class="actions stacked">
+				<li><a href="#" class="button primary fit">Get Started</a></li>
+				<li><a href="#" class="button fit">Log In</a></li>
+			</ul> -->
+		</nav>
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', '_s' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', '_s' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<h1 class="major"><?php the_title() ?></h1>
+				<span class="image main"><img src="<?= get_template_directory_uri() ?>/images/mountains.jpg" alt="" /></span>
+				<?php the_content() ?>
+			</div>
+		</section>
 
 <?php
-get_sidebar();
 get_footer();

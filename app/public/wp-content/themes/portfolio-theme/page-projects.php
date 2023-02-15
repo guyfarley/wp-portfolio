@@ -5,7 +5,7 @@
 
 <!-- Header -->
 <header id="header" class="alt">
-  <a href="index.html" class="logo">Home</a>
+<a href="<?= home_url(); ?>" class="logo">Home</a>
   <nav>
     <a href="#menu">Menu</a>
   </nav>
