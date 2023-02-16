@@ -4,7 +4,7 @@
 <div id="wrapper">
 
 <!-- Header -->
-<header id="header" class="alt">
+<header id="header">
 <a href="<?= home_url(); ?>" class="logo">Home</a>
   <nav>
     <a href="#menu">Menu</a>
@@ -27,16 +27,16 @@
 
 <!-- One -->
 <section id="one">
-								<div class="inner">
-									<header class="major">
-										<h1><?php the_title() ?></h1>
-									</header>
-									<span class="image main"><img src="<?= get_template_directory_uri() ?>/images/mountains.jpg" alt="" /></span>
+	<div class="inner">
+		<header class="major">
+			<h1><?php the_title() ?></h1>
+		</header>
+		<span class="image main"><img src="<?= get_template_directory_uri() ?>/images/mountains.jpg" alt="" /></span>
 									
-									<?php the_content(); ?>
+		<?php the_content(); ?>
 
-								</div>
-							</section>
+	</div>
+</section>
 
 		<!-- Contact -->
 		<section id="contact">
@@ -89,5 +89,5 @@
 			</div>
 		</section>
 
-					</div>
-<?php get_footer() ?>
+		<?php get_footer() ?>
+	</div>
