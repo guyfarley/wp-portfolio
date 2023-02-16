@@ -69,7 +69,7 @@
         <img src="<?= get_template_directory_uri() ?>/images/pic03.jpg" alt="" />
       </span>
       <header class="major">
-        <h3><a href="blog.html" class="link">Blog</a></h3>
+        <h3><a href="<?php echo site_url('/blog'); ?>" class="link">Blog</a></h3>
         <p>Deep Thoughts</p>
       </header>
     </article>
@@ -78,7 +78,7 @@
         <img src="<?= get_template_directory_uri() ?>/images/pic04.jpg" alt="" />
       </span>
       <header class="major">
-        <h3><a href="contact.html" class="link">Contact Me</a></h3>
+        <h3><a href="<?php echo site_url('/contact'); ?>" class="link">Contact Me</a></h3>
         <p>I love getting mail</p>
       </header>
     </article>
