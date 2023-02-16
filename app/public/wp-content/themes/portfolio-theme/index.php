@@ -1,57 +1,54 @@
-<?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package _s
- */
+<?php get_header() ?>
 
-get_header();
-?>
+<!-- Wrapper -->
+<div id="wrapper">
 
-	<main id="primary" class="site-main">
+<!-- Header -->
+<header id="header" class="alt">
+<a href="<?= home_url(); ?>" class="logo">Home</a>
+  <nav>
+    <a href="#menu">Menu</a>
+  </nav>
+</header>
 
-		<?php
-		if ( have_posts() ) :
+<!-- Menu -->
+<nav id="menu">
+  <ul class="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <!-- <ul class="actions stacked">
+    <li><a href="#" class="button primary fit">Get Started</a></li>
+    <li><a href="#" class="button fit">Log In</a></li>
+  </ul> -->
+</nav>
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+<!-- Banner -->
+<section class="major">
+			<div class="inner">
+				<header class="major">
+					<h1>Blog</h1>
 				</header>
-				<?php
-			endif;
+		</section>
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+		
+		<?php while ( have_posts() ) : the_post(); ?>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h2><?php the_title() ?></h2>
+					</header>
+					<span class="image main"><img src="<?= get_template_directory_uri() ?>/images/mountains.jpg" alt="" /></span>
+					<?php the_content(); ?>
+				</div>
+			</section>
+			<?php if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif; ?>
+		<?php endwhile; ?>
 
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
-
-<?php
-get_sidebar();
-get_footer();
+		<?php get_footer() ?>
+</div>
