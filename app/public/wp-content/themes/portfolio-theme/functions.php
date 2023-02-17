@@ -34,6 +34,15 @@ if (! function_exists('fa_custom_setup_kit') ) {
 
 fa_custom_setup_kit('https://kit.fontawesome.com/db1716593f.js');
 
+/**
+ * Register main menu
+ */
+
+ function register_main_menu() {
+	register_nav_menu("menu", "Main Portfolio Menu");
+ }
+ add_action("init", "register_main_menu");
+
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
