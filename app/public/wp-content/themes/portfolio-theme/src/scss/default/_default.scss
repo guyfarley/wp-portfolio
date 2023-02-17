@@ -3709,9 +3709,9 @@ body.is-preload #banner>.inner {
     padding: 6em 0 2em 0;
   }
 
-  /* #banner > .inner .content p br {
-					display: none;
-				} */
+  #banner>.inner .content p br {
+    display: none;
+  }
 
   #banner.major {
     padding: 8em 0 4em 0;
