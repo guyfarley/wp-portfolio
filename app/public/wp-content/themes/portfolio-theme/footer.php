@@ -25,7 +25,7 @@
 							target="_blank"><span class="label">LinkedIn</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; 2022 Guy Farley</li>
+					<li>&copy; 2023 Guy Farley</li>
 					<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>
