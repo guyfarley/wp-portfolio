@@ -41,7 +41,7 @@
 			<section id="two" class="spotlights">
 				<section>
 					<a href="https://aspect-install-tracker.vercel.app/" class="image" target="_blank">
-						<img src="<?= get_template_directory_uri() ?>/images/aspect.png" alt="" data-position="center center" />
+						<img src="<?= get_template_directory_uri() ?>/images/aspect3.png" alt="" data-position="center center" />
 					</a>
 					<div class="content">
 						<div class="inner">
@@ -63,7 +63,7 @@
 				</section>
 				<section>
 					<a href="https://lassen-fly-shop.netlify.app/" class="image" target="_blank">
-						<img src="<?= get_template_directory_uri() ?>/images/lassen1.png" alt="" data-position="top center" />
+						<img src="<?= get_template_directory_uri() ?>/images/lassen2.png" alt="" data-position="top center" />
 					</a>
 					<div class="content">
 						<div class="inner">
