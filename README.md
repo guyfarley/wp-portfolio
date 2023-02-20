@@ -39,6 +39,8 @@ Resources:
 
 - [WordPress.org](https://wordpress.org/)
 - [How to Convert Any HTML5 Template Into an Awesome WordPress Theme](https://wpmudev.com/blog/convert-html5-template-wordpress-theme/)
+- [Create App - Frontend build config generator](https://createapp.dev/)
+- [Underscores](https://underscores.me/)
 
 Credit for Original HTML Theme:
 
