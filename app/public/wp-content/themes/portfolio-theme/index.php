@@ -7,7 +7,7 @@
 
 <!-- Banner -->
 		<!-- Note: The "styleN" class below should match that of the header element. -->
-		<section id="banner" class="major">
+		<section id="banner" class="alt">
 			<div class="inner">
 				<span class="image">
 					<img src="<?= get_template_directory_uri() ?>/images/mountains.jpg" alt="" />
@@ -16,7 +16,7 @@
 					<h1>Welcome to my blog</h1>
 				</header>
 				<div class="content">
-					<p>These are my thoughts</p>
+					<p>Musings of a Web Developer</p>
 				</div>
 			</div>
 		</section>

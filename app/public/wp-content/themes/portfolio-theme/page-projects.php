@@ -49,7 +49,7 @@
 								<h3>Aspect Install Tracker</h3>
 							</header>
 							<p>App for tracking and reporting on retail graphic and fixture installations. Logged in users can access,
-								modify, create, and delete installations. Frontend built with Next.js framework. Incorporates
+								modify, create, and delete installations. Front-end built with Next.js framework. Incorporates
 								TypeScript. Built-in Next.js API routes communicate with Amazon RDS (PostgreSQL) database using the
 								Prisma ORM. Tailwind CSS used for styling.
 							</p>
@@ -70,9 +70,9 @@
 							<header class="major">
 								<h3>Lassen's Fly Shop</h3>
 							</header>
-							<p>A simple eCommerce-style application representing an online fly fishing catalog. Frontend built with
-								Next.js framework. Utilizes AWS cloud computing (API, Lambda function, and DynamoDB) for data
-								management on the back end. State managed via React's useContext hook. Styled using Material UI.</p>
+							<p>A simple eCommerce application representing an online fly fishing catalog. Users can click an item for expanded details, and add or remove items from shopping cart. Front-end built with
+								Next.js. AWS (API, Lambda function, and DynamoDB) for data
+								management on the back end. Styled using Material UI.</p>
 							<ul class="actions">
 								<li><a href="https://github.com/GuyFarley/lassen-fly-shop" class="button" target="_blank">See the
 										Code</a>
@@ -92,7 +92,7 @@
 							</header>
 							<p>Commissioned by the VP of Education at Code Fellows, this app allows enrolled students to maintain a
 								glossary of terms they have learned. Logged in users can add, update, and delete terms. A 3rd party API
-								is used for spell-checking. App built with React, Node.js, Express, and MongoDB.</p>
+								is used for spell-checking. Built with React, Node.js, Express, and MongoDB.</p>
 							<ul class="actions">
 								<li><a href="https://github.com/GuyFarley/coding-glossary-frontend" class="button" target="_blank">See
 										the Code</a></li>
