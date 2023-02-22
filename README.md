@@ -5,9 +5,9 @@
 
 **Author:** Guy Farley
 
-<!-- ## How to Run This Application
+## How to Run This Application
 
-Deployed at <https://aspect-install-tracker.vercel.app/> -->
+Deployed at <https://guyfarleydevelops.com/>
 
 ## Problem Domain
 
