@@ -12,8 +12,7 @@
       <h1>Hello, I'm Guy Farley</h1>
     </header>
     <div class="content">
-      <p>I'm a Software Developer<br />
-        JavaScript | React | Node | Express</p>
+      <p>I'm a Web Developer | JavaScript | React | Node</p>
       <ul class="actions">
         <li><a href="#one" class="button next scrolly">My Work</a></li>
       </ul>
@@ -70,15 +69,9 @@
       <header class="major">
         <h2>About Me</h2>
       </header>
-      <p>Hello! I am a software developer specializing in applications built with JavaScript, React,
-        Node, and Express. I'm also a career-changer with extensive experience in project management for brand
-        marketing and print production, and most recently I managed an account team in support of Unilever's
-        in-store marketing programs. I love to solve problems and think strategically, and I'm also a big believer
-        that
-        emotional intelligence and a strong culture are essential to the success of any organization.<br />
+      <p>Hello! I am a Web Developer specializing in front-end applications built with JavaScript, React, and Node. I'm also a career-changer with extensive experience in project management for brand marketing and print production. I love to solve problems and think strategically, and believe that emotional intelligence and strong culture are essential to the success of any organization.<br />
         <br />
-        When I'm not coding, you can find me fly fishing on the Deschutes or out grabbing a pint at
-        a local brewery. I love making connections in the tech community, so feel free to reach out!
+        When I'm not coding, you can find me out fly fishing or grabbing a pint at a local brewery. I love making connections in the tech community, so feel free to reach out!
       </p>
       <ul class="actions">
         <!-- <li><a href="landing.html" class="button next">Get Started</a></li> -->

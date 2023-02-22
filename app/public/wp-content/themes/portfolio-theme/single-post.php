@@ -28,10 +28,8 @@
 <!-- One -->
 <section id="one">
 	<div class="inner">
-		<header class="major">
 			<h1><?php the_title() ?></h1>
-		</header>
-		<span class="image main"><img src="<?= get_template_directory_uri() ?>/images/mountains.jpg" alt="" /></span>
+		<!-- <span class="image main"><img src="<?= get_template_directory_uri() ?>/images/mountains.jpg" alt="" /></span> -->
 									
 		<?php the_content(); ?>
 
