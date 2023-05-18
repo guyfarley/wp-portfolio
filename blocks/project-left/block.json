@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-theme/project-left",
+  "title": "Project Left",
+  "description": "",
+  "style": "file:./style.css",
+  "script": "",
+  "category": "media",
+  "icon": "cover image",
+  "apiVersion": 2,
+  "keywords": [],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "styles": []
+}
