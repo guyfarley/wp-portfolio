@@ -56,18 +56,18 @@ add_action('admin_bar_menu', function () {
 }, 50);
 
 
-// if acf_register_block function exists, call the acf/init action and pass a custom function called register_acf_blocks
-if (function_exists('acf_register_block')) {
-  add_action('acf/init', 'register_acf_blocks');
-}
+/**
+ * Register ACF Blocks
+ */
 
 // create register_acf_blocks function to loop over blocks directory and pass each block.json file to the wordpress register_block_type function
-function register_acf_blocks()
-{
-  $blocks = glob(__DIR__ . '/blocks/*');
-  foreach ($blocks as $block) {
-    if (is_dir($block)) {
-      register_block_type($block);
-    }
-  }
-}
+// function register_acf_blocks()
+// {
+//   $blocks = glob(__DIR__ . '/blocks/*');
+//   foreach ($blocks as $block) {
+//     if (is_dir($block)) {
+//       register_block_type($block);
+//     }
+//   }
+// }
+// add_action('acf/init', 'register_acf_blocks');
