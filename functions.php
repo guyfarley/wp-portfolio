@@ -1,4 +1,5 @@
 <?php
+
 /**
  * _s functions and definitions
  *
@@ -7,10 +8,11 @@
  * @package _s
  */
 
- function my_theme_scripts() {
-	wp_deregister_script('jquery');
-	wp_enqueue_script("script", get_template_directory_uri() . "/assets/main.min.js", array( 'jquery' ), false, true);
-	wp_enqueue_style("style", get_template_directory_uri() . "/assets/main.css", [], false);
+function my_theme_scripts()
+{
+  wp_deregister_script('jquery');
+  wp_enqueue_script("script", get_template_directory_uri() . "/assets/main.min.js", array('jquery'), false, true);
+  wp_enqueue_style("style", get_template_directory_uri() . "/assets/main.css", [], false);
 }
 add_action("wp_enqueue_scripts", "my_theme_scripts");
 
@@ -20,13 +22,14 @@ add_action("wp_enqueue_scripts", "my_theme_scripts");
  * This will add your Font Awesome Kit to the front-end, the admin back-end,
  * and the login screen area.
  */
-if (! function_exists('fa_custom_setup_kit') ) {
-  function fa_custom_setup_kit($kit_url = '') {
-    foreach ( [ 'wp_enqueue_scripts', 'admin_enqueue_scripts', 'login_enqueue_scripts' ] as $action ) {
+if (!function_exists('fa_custom_setup_kit')) {
+  function fa_custom_setup_kit($kit_url = '')
+  {
+    foreach (['wp_enqueue_scripts', 'admin_enqueue_scripts', 'login_enqueue_scripts'] as $action) {
       add_action(
         $action,
-        function () use ( $kit_url ) {
-          wp_enqueue_script( 'font-awesome-kit', $kit_url, [], null );
+        function () use ($kit_url) {
+          wp_enqueue_script('font-awesome-kit', $kit_url, [], null);
         }
       );
     }
@@ -48,11 +51,23 @@ fa_custom_setup_kit('https://kit.fontawesome.com/db1716593f.js');
 //  add_action("init", "register_main_menu");
 
 
- add_action('admin_bar_menu', function() {
-	remove_action('wp_before_admin_bar_render', 'wp_customize_support_script');
+add_action('admin_bar_menu', function () {
+  remove_action('wp_before_admin_bar_render', 'wp_customize_support_script');
 }, 50);
 
 
+/**
+ * Register ACF Blocks
+ */
 
-
-
+// create register_acf_blocks function to loop over blocks directory and pass each block.json file to the wordpress register_block_type function
+// function register_acf_blocks()
+// {
+//   $blocks = glob(__DIR__ . '/blocks/*');
+//   foreach ($blocks as $block) {
+//     if (is_dir($block)) {
+//       register_block_type($block);
+//     }
+//   }
+// }
+// add_action('acf/init', 'register_acf_blocks');

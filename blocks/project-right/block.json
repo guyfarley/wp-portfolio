@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-theme/project-right",
+  "title": "Project Right",
+  "description": "",
+  "style": "file:./style.css",
+  "script": "",
+  "category": "media",
+  "icon": "cover image",
+  "apiVersion": 2,
+  "keywords": [],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "styles": []
+}
