@@ -141,20 +141,30 @@
 		<?php }
 		?>
 
-		<!-- Three -->
-		<section id="three">
-			<div class="inner">
-				<header class="major">
-					<h2>What I'm Working On</h2>
-				</header>
-				<p>I'm currently learning PHP for WordPress development and deepening my understanding of software testing
-					practices for Agile workflows.<br /><br />
-					<!-- <ul class="actions">
+
+		<?php
+		$workingOn = new WP_Query(array(
+			'category_name' => 'working-on'
+		));
+
+		while ($workingOn->have_posts()) {
+			$workingOn->the_post();
+		?>
+			<!-- Three -->
+			<section id="three">
+				<div class="inner">
+					<header class="major">
+						<h2><?php the_title() ?></h2>
+					</header>
+					<p><?php the_content(); ?><br /><br />
+						<!-- <ul class="actions">
 						<li><a href="https://github.com/GuyFarley/install-tracker-frontend" class="button next"
 								target="_blank">GitHub Repo</a></li>
 					</ul> -->
-			</div>
-		</section>
+				</div>
+			</section>
+		<?php }
+		?>
 
 	</div>
 
