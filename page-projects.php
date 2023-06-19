@@ -156,11 +156,7 @@
 					<header class="major">
 						<h2><?php the_title() ?></h2>
 					</header>
-					<p><?php the_content(); ?><br /><br />
-						<!-- <ul class="actions">
-						<li><a href="https://github.com/GuyFarley/install-tracker-frontend" class="button next"
-								target="_blank">GitHub Repo</a></li>
-					</ul> -->
+					<p><?php the_content(); ?></p><br /><br />
 				</div>
 			</section>
 		<?php }
